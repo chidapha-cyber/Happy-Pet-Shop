@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+
+<html lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Happy Pet Shop</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'Prompt','Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#f9f9ff","surface-container-low":"#f0f3ff","on-background":"#111c2d","secondary-fixed":"#85f8c4","on-secondary":"#ffffff","primary-container":"#f97316","inverse-surface":"#263143","on-surface-variant":"#584237","secondary-container":"#82f5c1","on-surface":"#111c2d","on-secondary-fixed":"#002114","on-secondary-container":"#00714e","outline-variant":"#e0c0b1","primary-fixed-dim":"#ffb690","surface-container":"#e7eeff","on-secondary-fixed-variant":"#005137","surface-container-highest":"#d8e3fb","tertiary-fixed-dim":"#f9bd22","tertiary-container":"#c49200","on-tertiary-container":"#422f00","tertiary-fixed":"#ffdf9f","primary":"#9d4300","secondary":"#006c4a","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","error":"#ba1a1a","on-tertiary-fixed-variant":"#5c4300","on-error-container":"#93000a","outline":"#8c7164","secondary-fixed-dim":"#68dba9","surface":"#f9f9ff","on-primary-fixed-variant":"#783200","surface-bright":"#f9f9ff","inverse-primary":"#ffb690","on-error":"#ffffff","on-primary-container":"#582200","tertiary":"#795900","surface-variant":"#d8e3fb","on-primary":"#ffffff","inverse-on-surface":"#ecf1ff","surface-tint":"#9d4300","surface-container-high":"#dee8ff","on-primary-fixed":"#341100","error-container":"#ffdad6","on-tertiary-fixed":"#261a00","surface-dim":"#cfdaf2","primary-fixed":"#ffdbca"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2rem","gutter-lg":"2rem","space-md":"1rem","space-2xl":"3rem","space-lg":"1.5rem","gutter-md":"1.5rem","container-max":"1280px","space-xs":"0.5rem","space-3xl":"4.5rem","gutter-sm":"1rem","space-sm":"0.75rem","space-2xs":"0.25rem"},"fontFamily":{"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-lg-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.015em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"26px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.005em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_2px_12px_rgba(30,41,59,0.06)]"><div class="w-full bg-primary-container text-on-primary-container px-4 py-1.5"><div class="max-w-container-max mx-auto flex items-center justify-center gap-space-sm font-label-md text-label-md"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">local_shipping</span><span>ส่งฟรีทั่วประเทศเมื่อสั่งซื้อครบ 500 บาท</span></span><span class="opacity-50">|</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bolt</span><span>ส่งด่วนภายใน 2 ชม. ในเขตกรุงเทพฯ</span></span></div></div><div class="h-20 max-w-container-max mx-auto px-gutter-lg flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="Happy Pet Shop Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UEYMV-01KwlYTZVn2n-G8wxuCInqQwOjPbpt-fzGyuKHgod2aPUgru3UoYzfU_B3b-G4dSj3WIf-fuKrh6_F_ajwY4xPgQroD4FZgUZEo2smYiUP9XCOPXzT0jLPr-R2Qwdu_l-AJhsXqlhz-dLM2nuo0NfNGGdss9bz8zWFV058EICIJ-L0TJNOduQ63sNaIYnLJtfQy1MsrZEwfSN4DqijQJKLhC0OKLbTXuxn5J8k6Y4c_Jr6-S2Go"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary leading-tight tracking-tight">Happy Pet</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal">ร้านอาหารสัตว์เลี้ยงครบวงจร</span></div></div><div class="flex-1 max-w-2xl"><div class="flex items-center bg-surface-container-low rounded-xl p-1 shadow-sm"><select class="bg-transparent text-on-surface font-label-md text-label-md px-space-sm py-2 outline-none cursor-pointer pr-2"><option value="all">ทุกหมวดหมู่</option><option value="dog">อาหารสุนัข</option><option value="cat">อาหารแมว</option><option value="treats">ขนม &amp; วิตามิน</option></select><div class="h-6 w-px bg-outline-variant/40 my-auto"></div><div class="flex items-center flex-1 px-space-sm gap-2"><span class="material-symbols-outlined text-on-surface-variant text-base">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none" placeholder="ค้นหาอาหารสุนัข, อาหารแมว, ขนม, วิตามินบำรุง..." type="text"/></div><button class="bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md px-space-lg py-2 rounded-lg transition-all flex items-center justify-center font-semibold shadow-sm" type="button">ค้นหา</button></div></div><div class="flex items-center gap-space-md flex-shrink-0"><a class="flex items-center gap-1.5 px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-error text-xl">favorite</span><span class="font-label-md text-label-md hidden xl:inline">รายการโปรด</span></a><a class="flex items-center gap-2 px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors relative" data-path="cart" href="#"><span class="material-symbols-outlined text-secondary text-xl">shopping_cart</span><span class="font-label-md text-label-md font-semibold">ตะกร้าสินค้า</span><span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full min-w-[20px] text-center font-bold">3</span></a><div class="h-7 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-xs pl-space-2xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK7vkFcPvksDUzkhfxXpX-rVP48N-aN64SO0NlJCzicqaq3lxGnjA91AfWjCYcYtBQDdMQyygEMOW2FLgi06JH-sa3DDcaq45NI6KRjn6ZDPRBImDeBNbn_dBPl1CfGZQmTsRxs23dYH016okVa4b-QJLIUAUMcR4LBkwNeO0p6D6WMIPUNYZcUS6CtdD8luqOZ4hwxQyefLQzTz13djInR0bsLr5fbVmGX4Syua5zVGLkrqD3QU72"/><div class="flex flex-col text-left"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md font-bold text-on-surface leading-tight">คุณพิมพิศา</span><span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.2 rounded font-bold uppercase">Pet VIP</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">1,250 พอยท์</span></div></div></div></div><div class="w-full bg-surface-container-lowest shadow-[0_1px_3px_rgba(0,0,0,0.03)]"><div class="max-w-container-max mx-auto px-gutter-lg flex items-center justify-between"><nav class="flex items-center gap-space-xs py-2" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-1.5 transition-all bg-primary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="home" href="#">หน้าแรก</a><a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="shop" href="#">สินค้าทั้งหมด</a><a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dog-food" href="#">อาหารสุนัข</a><a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="cat-food" href="#">อาหารแมว</a><a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="treats-and-supplements" href="#">ขนม &amp; โภชนาการพิเศษ</a><a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="promotions" href="#">โปรโมชั่นพิเศษ</a><a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="pet-care-blog" href="#">บทความดูแลสัตว์เลี้ยง</a></nav><div class="hidden lg:flex items-center gap-2 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-base">verified</span><span>รับประกันสินค้าแท้ 100% เกรดพรีเมียม</span></div></div></div></header><main class="w-full pt-36 bg-background"><div class="flex flex-col w-full">
+<!-- Top Hero Visual Showcase -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface-container-lowest to-background pb-space-2xl pt-space-xl">
+<div class="max-w-container-max mx-auto px-gutter-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Hero Content -->
+<div class="lg:col-span-7 flex flex-col items-start z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">โภชนาการพรีเมียม 100% Organic &amp; Grain-Free</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface font-extrabold leading-tight tracking-tight mb-space-md">
+            โภชนาการที่ดีที่สุด เพื่อ<span class="text-primary-container">รอยยิ้ม</span>ของสัตว์เลี้ยงตัวโปรด
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-xl leading-relaxed">
+            คัดสรรอาหารสุนัขและแมวเกรดโฮลิสติก เกรนฟรี จากแบรนด์ชั้นนำทั่วโลก ส่งตรงถึงบ้านคุณ สดใหม่ ปลอดภัย 100% พร้อมคำแนะนำที่ตอบโจทย์เฉพาะสุขภาพน้อง
+          </p>
+<div class="flex flex-wrap items-center gap-space-md w-full sm:w-auto mb-space-2xl">
+<a class="bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-label-lg text-label-lg px-space-xl py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group font-semibold" data-path="shop" href="#">
+<span>ช้อปเลยตอนนี้</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="bg-surface-container-lowest hover:bg-surface-container text-secondary font-label-lg text-label-lg px-space-xl py-3.5 rounded-xl shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 font-semibold" data-path="pet-care-blog" href="#">
+<span class="material-symbols-outlined text-base">support_agent</span>
+<span>ปรึกษาโภชนาการฟรี</span>
+</a>
+</div>
+<!-- Quick Interactive Pet Quick Switch -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">pets</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">กำลังเลือกอาหารให้น้องพันธุ์ไหน?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">เลือกโหมดแนะนำแบบเฉพาะสายพันธุ์</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">sound_detection_dog_barking</span> น้องหมา
+              </button>
+<button class="px-4 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-bold flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">pets</span> น้องแมว
+              </button>
+</div>
+</div>
+</div>
+<!-- Right Hero Visual Mosaic -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<div class="relative w-full max-w-lg aspect-square">
+<!-- Background Atmospheric Glow Rings -->
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-fixed-dim/40 via-secondary-fixed/30 to-tertiary-fixed/30 blur-3xl -z-10"></div>
+<!-- Hero Image Layer -->
+<div class="w-full h-full rounded-3xl overflow-hidden shadow-2xl relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A radiant golden retriever and a fluffy British Shorthair cat sitting calmly beside high-end stainless steel bowls full of colorful fresh pet kibble, salmon cubes, and fresh herbs. Bright daylight studio photography, warm morning sunlight, pastel warm cream background with gentle orange and mint green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy0od-ottwFUdKBdRMlRLHQSkNY0UC7th0G2GsT-jErF-p1_sTtJXi7X1mpIQxJC2pzmc3XkZRxwVw3ZJgyj4AyCuLYTA0C1OcjQijC-vwr-K0uPcro5wqah6QT3Cc9fZK1S6D5RFVTYpk7UlPjF5g7DXEZas1qdFmEry-8ib4l_PmR_gQJKCvct-4f02hIjm5NW06iNl9OuG72SqC6i2tF5tFzV6gO2lh0MLsB_ttvbnk57ae-V11"/>
+<!-- Floating Floating Pill Badge -->
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">สดใหม่ ไม่ผสมข้าวโพด</span>
+</div>
+<!-- Organic Nutrition Floating Tag -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md p-space-sm rounded-2xl shadow-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-headline-sm">
+<span class="material-symbols-outlined text-lg">verified</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">การันตีโปรตีนสด 70%+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">เกรดโฮลิสติก มาตรฐานสหรัฐฯ AAFCO</p>
+</div>
+</div>
+<span class="text-secondary font-label-md text-label-md font-bold">100% Safe</span>
+</div>
+</div>
+<!-- Overlapping Decorative Micro Card -->
+<div class="-bottom-6 -left-6 absolute hidden sm:flex bg-surface-container-lowest p-3 rounded-2xl shadow-xl items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-base">delivery_dining</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface">จัดส่งด่วน 2 ชม.</p>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">กทม. &amp; ปริมณฑล</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Bar Metrics Strip -->
+<div class="mt-space-2xl grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center gap-space-sm">
+<span class="w-11 h-11 rounded-xl bg-tertiary-fixed/60 text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">4.9 / 5.0</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">จากผู้เลี้ยง 50,000+ ตัว</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center gap-space-sm">
+<span class="w-11 h-11 rounded-xl bg-secondary-fixed/60 text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl">local_shipping</span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">ส่งฟรี 500.-</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ทั่วไทย ปลอดภัย รวดเร็ว</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center gap-space-sm">
+<span class="w-11 h-11 rounded-xl bg-primary-fixed/60 text-on-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl">medical_services</span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">สูตรแนะนำ</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ดูแลโดยสัตวแพทย์</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center gap-space-sm">
+<span class="w-11 h-11 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl">replay</span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">คืนสินค้า 7 วัน</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">รับประกันของแท้ 100%</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Needs & Categories Grid -->
+<section class="w-full py-space-3xl">
+<div class="max-w-container-max mx-auto px-gutter-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">เลือกตามช่วงวัยและความต้องการพิเศษ</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">หมวดหมู่อาหารยอดนิยม</h2>
+</div>
+<a class="mt-2 md:mt-0 font-label-md text-label-md text-secondary hover:text-on-secondary-container font-semibold flex items-center gap-1" data-path="shop" href="#">
+          ดูหมวดหมู่ทั้งหมด <span class="material-symbols-outlined text-base">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-md">
+<!-- Category Card 1 -->
+<a class="group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center" data-path="dog-food" href="#">
+<div class="w-20 h-20 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-low p-1 group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Portrait of an energetic happy Golden Retriever adult dog outdoors, healthy shiny coat, soft natural afternoon sunlight, cozy aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp1_m8c9cX19YS-vJ-nRvO8CfckXEM9TJITh7xm0ucLVUh-uuyzB_ad0lrQ_7FqvhdHaxkjiRT3WpyQUzh76GoJiSuUjHkLYyVA0eslvbHXAN36ScIuDUjAta-tzhQiF97veTRSkBZPuSeL5eW_78GcRDTGcb26uhhG4-ATN1fbStFGyWnrDs5tcjV7NRws7RZG3XRmqHHS2xMcIlgfVE7qDZoYyFYOJpAc2WMRIHibEr64uXW_UT5"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors">สุนัขโต</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Adult Dogs (1+ ปี)</span>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm">140+ รายการ</span>
+</a>
+<!-- Category Card 2 -->
+<a class="group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center" data-path="dog-food" href="#">
+<div class="w-20 h-20 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-low p-1 group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Cute playful French Bulldog puppy sitting on soft rug, warm studio lighting, adorable expression, joyful atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTDvcJZGgZXea8b9HgcC7FEBCMp8nddVQqFhXT5fhZ8R5DrNXMpa5SXHmLA8vi7ZB1dKuPkOO0KceKVlIdVIbe6-__C6Sdmf8Z_jXChdC3ph-afEp-21KQFa6bJqCVlLIuL29ZXFjAfftCt3sqF2RGrtYCUmIpORdoczAGq7j5g-8GddOPtMVHbLJXvWok_vPWgBIsRsJLB1l0HCed7TmQtTL1cnQrkcwoZtnXQvHKBqe0d19lzd0x"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors">ลูกสุนัข</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Puppy Care (วัยเติบโต)</span>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-primary-fixed/60 text-on-primary-fixed font-label-sm text-label-sm">65+ รายการ</span>
+</a>
+<!-- Category Card 3 -->
+<a class="group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center" data-path="cat-food" href="#">
+<div class="w-20 h-20 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-low p-1 group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Fluffy British Shorthair indoor cat lounging peacefully beside a modern wooden cat tree, clean minimalist indoor interior, warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO3J5WYAhyMVUPo4nCuKV_QwZGjpvv27wWr9E4hqqhuCeOMY_iBJuDL0ffYF2Z-5_2qAuCDdCE6aRQoPZITGy6poDEwuPW28GVOnRMI-ali-fH-zu4TOv87M7mRCEr7wmnezmGh9b4tkVMtb4IRPCQncI9yWJWNdT2o72x9h_VKBy1CMDO3hObZ5CJTNT9BNR0q2oprYawj_1SoA-Tk02nCUJP4ouThP6zcidS6To7jscQ9WMfb7Gh"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors">แมวโต &amp; เลี้ยงในบ้าน</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Indoor Cats (สูตรคุมก้อนขน)</span>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm">180+ รายการ</span>
+</a>
+<!-- Category Card 4 -->
+<a class="group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center" data-path="cat-food" href="#">
+<div class="w-20 h-20 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-low p-1 group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Tiny calico kitten with bright curious eyes eating healthy nutrition broth from a bowl, warm indoor setting, high detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3yvNgKlhb6JW-cL4Vfy1FLuzGOzoXOqf92Hwre11YbblgCElXSnFjBQEoAnbSj2TFOjm_QoWPpe0TYd3zh7bWANAXIZF5_N2BDUFfryEDTyvYIRRpbSGO5WCPrtCDan31k0eOkDAQCT_x26ERuS70q7fXdyrh1KPWdals1GflNXNEhRKUADgY4qdmidDSx7Gr4TD5N03DlPJ28NHmWhy0HGAUZ8CyKQ3JSwBioDSnSpcECCOwZUYK"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors">ลูกแมว</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Kitten Growth (เสริมภูมิ)</span>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-primary-fixed/60 text-on-primary-fixed font-label-sm text-label-sm">52+ รายการ</span>
+</a>
+<!-- Category Card 5 -->
+<a class="group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center" data-path="treats-and-supplements" href="#">
+<div class="w-20 h-20 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-low p-1 group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Clinical vet care concept with pet stethoscope, balanced kidney dietary formula kibbles on a sterile pastel backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5U7N0q3Q1RzVOkDohRoD2Q7O7hmgjPRVQ5Tu3_pmhjXoRu34PCk1RG1YF0g84jqHoZQEDFEVFFS-YH2gvW4bDSzCwd4y-7p9_NJFCyYTQi8NuKWN7TJ84vxgzBJgUGwuuF7rgYxXjCqBggqJED20wOHA6zMbZAHCSBo6HD9QFwBckHLVkSBmvsh2X-fdjQarRoxj_SnlZ2E2a_8AvLn4OkT7hGWOQK7uWJhi1HGerRYjE6W1D-sx8"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors">อาหารโรคไต/คุมน้ำหนัก</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Therapeutic Diet</span>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm">48+ รายการ</span>
+</a>
+<!-- Category Card 6 -->
+<a class="group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center" data-path="treats-and-supplements" href="#">
+<div class="w-20 h-20 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-low p-1 group-hover:scale-105 transition-transform">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Freeze-dried raw chicken breasts and diced salmon treats alongside wild salmon oil supplement bottle, warm ambient kitchen counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChSYwAf0Mz_xWXrBmYbbXOipht_QRnnPSOFiolVUVXwPcEYngLFZ_DdydSA9G_Vw0EvU_S3-WkpTzbNfk8qwciGcRMSgUcWxXEDuJ8IRnnb5lvviX4Lixb3n_dcelj2T3Hz7PqnnJPyygbhs0ud5pMh0sWyW3rVY-_tk45H0nZ_myFzQbJOJqqYv71YCYFny4MII2K2-35JkBHOG2j1hL2HuL8z9f41ikChOenHbCVnqim-eulSyD9"/>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors">ฟรีซดราย &amp; บำรุงขน</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Freeze-dried &amp; Skin</span>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm">95+ รายการ</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Flash Deals & Special Discounts Strip -->
+<section class="w-full py-space-2xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter-lg">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md mb-space-xl">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">ดีลเด็ดลดแรง ประจำสัปดาห์</h2>
+<span class="px-2 py-0.5 bg-error text-on-error rounded font-label-sm text-label-sm font-bold">HOT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">สินค้าของแท้ลดล้างสต็อก ประจำวัน จัดส่งทันที</p>
+</div>
+</div>
+<!-- Dynamic Flash Countdown Timer -->
+<div class="flex items-center gap-2 bg-surface-container-lowest px-space-md py-2.5 rounded-2xl shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">หมดเวลาใน:</span>
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold text-primary" id="deal-timer">
+<span class="px-2 py-1 bg-surface-container rounded-lg">08</span>:
+            <span class="px-2 py-1 bg-surface-container rounded-lg">45</span>:
+            <span class="px-2 py-1 bg-surface-container rounded-lg">12</span>
+</div>
+</div>
+</div>
+<!-- Flash Deal 4-Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Flash Item 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Packaging of Royal Canin Mini Indoor Adult 3kg pet food bag placed cleanly on modern bright shelf with kibbles sample, white and orange accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCycCAqDgD7eOiJb1gMGm-dj1_psrz5pZtm_p8WoQF68PyHef1_H1I22g5oIWUSqO-HReSKr9RQG_PHLo5TF4wLyq9YL1SfSeeXqoz-RpooECpTnypGPebJ-J0499NbjkI8i61YpyPk4G9y8pZ-M2NAbeKobDOD9VykFtEtfclwWFR-VNrSoKzxDpeJsST_5FYXGUj_bvdma6bfLUPNDKgzalJ8yVVdjlx4WNumL-u3_cYxu0MPwf3r"/>
+<span class="absolute top-3 left-3 bg-error text-on-error px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">-25%</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-tertiary-container mb-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(1,420 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Royal Canin Mini Indoor Adult 3kg
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              สำหรับสุนัขพันธุ์เล็กเลี้ยงในบ้าน ลดกลิ่นมูล ถนอมข้อต่อ
+            </p>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">฿690</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70 line-through">฿850</span>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md py-2.5 rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>หยิบใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+<!-- Flash Item 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Premium package of Orijen Original Grain-Free Dog Food bag 2kg surrounded by fresh chicken cutlets and wild-caught fish, natural daylight, warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUXSug2N-kqvsyIN3rpYTDsWHgcHLJ7A_ixeYKbSnsbW9zKktC2RonV80IVpxtVZJ_DNwlA5niNQrhFAWhzCEJrGeVe4a7j6kXfLlyn549b6sGujBAHoZ12yo9d8TfDseQ2DFRSCk1hoJUGbDZkL-H8bJsPkeWnqrRJo40LwOv85tBIvsYcOWLD5d2Uynaz3HYQrQ-yztH0DOtTZPbG3rpyPNXNtBJ1R-3yogpWy3VtK2r5jU8FoCE"/>
+<span class="absolute top-3 left-3 bg-error text-on-error px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">-21%</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-tertiary-container mb-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">5.0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(840 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Orijen Original Grain-Free Dog 2kg
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              สูตรชีวภาพดั้งเดิม เนื้อสัตว์สด 85% ปราศจากธัญพืช
+            </p>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">฿1,250</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70 line-through">฿1,590</span>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md py-2.5 rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>หยิบใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+<!-- Flash Item 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Kaniva Salmon, Tuna and Rice Cat Food bag 1.5kg presented with salmon fish slices and green tea leaves, studio light, vivid packaging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv7bKzRchK4g55sup7CJ-1zmZHKf8ulJ4IO-THHfrcTHMKcJg3Hf7siDZMT8nwHsi6goUXB3WAVLGxhJaBejpM5h_cTjsh2DbHyDYqVPpizFl8AtUL7NvRUB5L7qUuEXbRxJ5ojHu8CxjV1fHIqfot_jX3WuPFvJpbBAiealCyED8in5gHSzcL5ZQNOLdGNEuBRc69NFI8WX___ENtmzWnd9nk-aLA_gmwFhTmKHAE92P21uCNMTPd"/>
+<span class="absolute top-3 left-3 bg-error text-on-error px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">-20%</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-tertiary-container mb-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(2,110 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Kaniva Salmon, Tuna &amp; Rice Cat 1.5kg
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              สูตรแซลมอน ทูน่า และข้าว ขนสวยเงางาม ลดโซเดียม
+            </p>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">฿285</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70 line-through">฿360</span>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md py-2.5 rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>หยิบใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+<!-- Flash Item 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Carna4 Handcrafted Whole Food Cat 1.36kg bag placed in high-end natural kitchen setting with sprouted seeds and clean wooden bowl, holistic pet food branding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1KSOjqClPQPPPbH_qvyxWwbB4VaIAluUu6FjTbi0lFM3ZOP17WEawPkDbIvK_AKfXGUVJ3KLgPvM_NXcie1T2Rmlg5oVitzxfORVZn02GAJnN8wi-HzpYajrwWLNEnOQt7PdVjgXLBRptp1njzm-HPSHueplIV7UYzaBWR1aye0TDfy5E90Apimqx6ZhiSBAi6x235RPrVjeP3WZ2rFPN0UnZ0I9Cio3pgTGc6rrFqRTfYr37DLW8"/>
+<span class="absolute top-3 left-3 bg-error text-on-error px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">-16%</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-tertiary-container mb-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(430 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Carna4 Handcrafted Whole Food Cat 1.36kg
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              อาหารแมวอบช้า พรีเมียมโฮลิสติก เมล็ดงอกธรรมชาติ
+            </p>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">฿1,190</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70 line-through">฿1,420</span>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md py-2.5 rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>หยิบใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Nutrition Guide & Quiz Banner -->
+<section class="w-full py-space-3xl">
+<div class="max-w-container-max mx-auto px-gutter-lg">
+<div class="bg-gradient-to-r from-secondary to-on-secondary-container rounded-3xl p-space-xl lg:p-space-2xl text-on-secondary relative overflow-hidden shadow-xl">
+<!-- Ambient Decorative Pattern -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary-fixed/10 blur-2xl pointer-events-none"></div>
+<div class="absolute right-12 top-8 text-on-secondary/10 hidden lg:block select-none">
+<span class="material-symbols-outlined text-9xl">pets</span>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-8">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold mb-space-sm inline-block shadow-sm">
+              ✨ แบบทดสอบโภชนาการอัจฉริยะ (Pet Nutrition Quiz)
+            </span>
+<h2 class="font-display-lg text-display-lg font-bold text-on-secondary mb-space-sm leading-tight">
+              ค้นหาอาหารที่ "ใช่ที่สุด" สำหรับน้อง
+            </h2>
+<p class="font-body-lg text-body-lg text-on-secondary/90 max-w-2xl mb-space-lg leading-relaxed">
+              ตอบคำถามสั้นๆ เพียง 3 ข้อ เพื่อให้ทีมโภชนาการประมวลผลสูตรอาหารที่เหมาะกับสายพันธุ์ ช่วงวัย และปัญหาสุขภาพเฉพาะตัว พร้อมรับคูปองส่วนลด 15% ทันทีทางหน้าจอ!
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mb-space-lg">
+<div class="bg-on-secondary/10 backdrop-blur-sm p-space-sm rounded-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md font-semibold text-on-secondary">1. เลือกประเภทสัตว์เลี้ยง</span>
+</div>
+<div class="bg-on-secondary/10 backdrop-blur-sm p-space-sm rounded-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md font-semibold text-on-secondary">2. ระบุช่วงวัยและน้ำหนัก</span>
+</div>
+<div class="bg-on-secondary/10 backdrop-blur-sm p-space-sm rounded-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md font-semibold text-on-secondary">3. ระบุความต้องการพิเศษ</span>
+</div>
+</div>
+<button class="bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-label-lg text-label-lg px-space-xl py-3.5 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all inline-flex items-center gap-2" type="button">
+<span class="material-symbols-outlined">quiz</span>
+<span>เริ่มทำแบบทดสอบ (ใช้เวลาเพียง 1 นาที)</span>
+</button>
+</div>
+<div class="lg:col-span-4 flex justify-center">
+<div class="bg-surface-container-lowest text-on-surface p-space-lg rounded-2xl shadow-2xl max-w-sm w-full">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm font-bold text-secondary">สูตรแนะนำประจำวันนี้</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="w-full h-32 rounded-xl bg-surface-container-low overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Close up of holistic grain-free pet food bowl with fresh ingredients like blueberries, green peas, and fresh salmon fillets, clean soft studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD628qJfh1Otk79LMPfrkemMfPP9mic7kIducv3VVpumC4huOrYh9oWcDhU6vFMGmDUS3XRvHDFiJqMiXTMhIhJyGKF-5HwLbrN8j7EANp61jN7YtwjO5uZpW2eYidcpvxaNV7nY_ZB6EwKqO9faUeNloU1Snahbj30WHv4LiJtW7qv0GDm5OleGDJW_joKCgm6IjoWewiEMa0Tli_JWzpPzQghLcjC0_De1JQaF87sWLybZ9dwg5Zs"/>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">สูตรควบคุมน้ำหนัก &amp; บำรุงข้อต่อ</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">เหมาะสำหรับสุนัข/แมวทำหมันแล้ว ช่วยให้อิ่มนาน กล้ามเนื้อกระชับ</p>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-bold">ผลลัพธ์เห็นได้ใน 4 สัปดาห์</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold cursor-pointer hover:underline">อ่านเพิ่มเติม</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Seller / Popular Picks with Filter Tabs -->
+<section class="w-full py-space-2xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">การันตียอดขายสูงสุดจากรีวิว 5 ดาว</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">สินค้าขายดีประจำเดือน</h2>
+</div>
+<!-- Filter Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 mt-space-md md:mt-0">
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm whitespace-nowrap" type="button">ทั้งหมด</button>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors whitespace-nowrap" type="button">สำหรับสุนัข</button>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors whitespace-nowrap" type="button">สำหรับแมว</button>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors whitespace-nowrap" type="button">ขนมสุขภาพ &amp; ฟรีซดราย</button>
+</div>
+</div>
+<!-- 4 Featured Popular Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Best Item 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Bag of Taste of the Wild High Prairie Canine Formula with roasted bison and venison pet food kibble package, natural outdoor forest backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByhTdAyHxSQPVp4W9b7P7qWXkHqQPXRcqzk3saEXPtUR45-jb_lpYPNbyxBhUZRVY3XRuJDO6bLLrktIx1e0aTLdoU--KtJ8q91bJN44RvFhUnObYOtJkJV_SNcJMW5xiEIUlrfpO19rrZTQTli_YGtbzSsWI0Fq5Xg5UQfxNjM6WBNB3GuA0IKPL9Tb8iDAimM_vFtbfawdhKk9INMyUvjFAUTq5zKq3292UroxcHcqPbeDL9lxvz"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">ขายดีอันดับ 1</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase">อาหารสุนัขโฮลิสติก</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Taste of the Wild High Prairie 2kg
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              สูตรเนื้อไบซันและเนื้อกวางย่าง ปราศจากธัญพืช ย่อยง่าย
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">฿980</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">ส่งฟรีทันที</span>
+</div>
+<button class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md py-2.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>เลือกขนาดสินค้า</span>
+</button>
+</div>
+</div>
+<!-- Best Item 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Wellness CORE Grain-Free Turkey and Chicken Liver formula cat food pate cans neatly stacked on light wooden tabletop with herb garnishes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTeLu89xM1TjaUC4ty1ZNIswvQpX1URy7KoL-f8siVo6CVVc_Ercdz1XKzNtf8fiWTDDKUPGwEQj5PEqA3K_XRYRB3nWJjAs3Hx62fC3KMEWwdJmN9ZwA78T8wUtlYqfO90wvpVSjXEwxGtOyKeRMz9G4hyd7z5MEmjk-JXHsVFusDcfhWmi11R5xIGRcnOVf9u8w6kJ3Hzl1u5ujpp2_NA5X247pQWgBg2LnnLAwyASGc8IGJ86_X"/>
+<span class="absolute top-3 left-3 bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">เกรดพรีเมียม</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase">อาหารเปียกแมว</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Wellness CORE Turkey &amp; Duck Pate (ยกแพ็ก 12 กระป๋อง)
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              เนื้อเนียนนุ่ม กลิ่นหอมดึงดูดแมวทานยาก ไม่แต่งสีสังเคราะห์
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">฿720</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">แถมช้อนตักฟรี</span>
+</div>
+<button class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md py-2.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>เลือกขนาดสินค้า</span>
+</button>
+</div>
+</div>
+<!-- Best Item 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Modern pack of Nordic Naturals Omega-3 Pet Fish Oil liquid supplement bottle with dropper and fresh deep sea fish illustration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7syXP2llugmS6vYmKiie4hwU29mIeKolpwejyGmlx4oTDH_jPM8brEZ_Za-vpOnjFZg7E5YjaCWz34u25dBXRZqD1SPfvTFbvsgD1AUkeSBS55lcL2Y_l6_cgIIlhhSbY_Bqkb6I6Qbp1C3TkT3ZPwEHsmHrHocI9VQzjSKNvGDcOIIj30fpCg98kjLO5afKOCARKsinNQ0WKASy0datPSV6swff1hnuDH-M43unBoBPboebAdxHG"/>
+<span class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">สัตวแพทย์แนะนำ</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase">อาหารเสริมบำรุงขน</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Nordic Naturals Omega-3 Pet Oil 237ml
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              น้ำมันปลาแซลมอนบริสุทธิ์เข้มข้น ลดอาการคัน ขนร่วง ป้องกันผิวหนังอักเสบ
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">฿1,050</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">สูตรสำหรับสุนัข&amp;แมว</span>
+</div>
+<button class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md py-2.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>เลือกขนาดสินค้า</span>
+</button>
+</div>
+</div>
+<!-- Best Item 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-low overflow-hidden mb-space-md p-2">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Pouch packaging of Freeze-Dried Raw Chicken Breast Bites for pets, displayed beside crispy freeze dried cube treats and fresh rosemary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKjR8ZBVy_yTvFr3s1xz8ri6TV9MzhkRhcxf4Xrm92mWbyyy5Wg882m2qqMUPvbpq_npmq_aUOAvCviPtkZozjXXNJEPZuQ8j147M41Pi8RypN_LaqTY_ttBjpcsObAmyhQ8EBWM0YyKBe2XzA4V29qg9ZVnbDf_xG72PsUbiO7miwH1Q8OMieFCXmL0vDoyqns9GtWMsqyJjv1Jh0LxAfqE5hSSSvgMXOMKAhjKNze2rfMQj6bqPf"/>
+<span class="absolute top-3 left-3 bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">100% เนื้อล้วน</span>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase">ขนมขบเคี้ยวเพื่อสุขภาพ</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface line-clamp-1 mb-1">
+              Happy Pet ขนมอกไก่ฟรีซดรายแท้ 150g
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">
+              ไม่เค็ม ไม่ปรุงรส ไร้สารกันบูด โปรตีนสูง เสริมสร้างกล้ามเนื้อ
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">฿250</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">ซื้อ 3 แถม 1</span>
+</div>
+<button class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md py-2.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>เลือกขนาดสินค้า</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Verified Customer Testimonials & Reviews -->
+<section class="w-full py-space-3xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">ความไว้วางใจจากครอบครัวคนรักสัตว์</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">เสียงตอบรับจริงจากคุณพ่อคุณแม่</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          เพราะสุขภาพที่ดีของน้อง คือความสุขสูงสุดของพวกเรา ร่วมดูรีวิวการเปลี่ยนแปลงหลังจากเปลี่ยนอาหารเกรดพรีเมียม
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-container mb-space-md">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-lg italic">
+              "น้องมิลค์ ขนเงางามขึ้นชัดเจนหลังทานสูตรแซลมอนเพียง 3 สัปดาห์ จากที่เคยคันและเกาบ่อยๆ ตอนนี้ขนแน่นนุ่ม ไม่ร่วงเต็มบ้านเลยค่ะ สั่งร้านนี้ประจำ ส่งไวมาก แพ็คมาดีสุดๆ"
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md border-t border-surface-container">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of happy Thai pet owner woman smiling lovingly with her cute white fluffy Pomeranian dog, indoor home lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdtFPg5nrxXT7QkQDDcuaQ-FQrAAWRfRejH1CM8uiP9zZzkggCtlCz98xEL7a_msPvwpEsH4jrte8d3PhXRnojwdlHiZoDT_xbgDDR9SSFtv9SkM_nOhK00GwlSz7LGySaun3MPs4zAW7LgQ1pNy5AJr78yYI3EgTUCcseoQ4C9yi6devh8Kg9Y_QfU7BEAFmrNW19SSmfWtKMRZPZjlv7jjUlL-XrKohZP1a78o4QT03x9mjD2k4u"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">คุณกมลวรรณ ท.</p>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">verified</span> ผู้ซื้อจริง (Verified Buyer)
+                </span>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-1 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                น้องมิลค์ (ปอมเมอเรเนียน)
+              </span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-container mb-space-md">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-lg italic">
+              "แมวที่บ้านเลือกกินยากมาก ลองเปลี่ยนมา 4 ยี่ห้อไม่ยอมแตะ พอได้สูตรเกรนฟรีที่พี่สัตวแพทย์ของ Happy Pet แนะนำ เทปุ๊บหมดชามทันที ถ่ายเป็นก้อนสวย กลิ่นอึลดลงเยอะมากครับ"
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md border-t border-surface-container">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of a young Thai man holding a Scottish fold cat indoors in living room, smiling contentedly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfS_IMIloW81OBQJqax63Bbt-bAX2tCCzAd2gOZOyieXfNR5cJIWafr_K0vaIZUzjpws7ZdAVWlMOjBScVv3NOQOvkbx9SptbgM2pkWXMIHn5fHWigNMYAgdcaj30WZpcRO3ZOeX3Bc6EQWQNWvQRMyGOWm5qWCYaYxtddg7c94E2KGdFQfE9nhMsuljj5NysVytf9atTKEMtDHN1aHSAawOlQSohCHppsqpP3QWtjToXCD_M-S139"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">คุณธนภัทร ร.</p>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">verified</span> ผู้ซื้อจริง (Verified Buyer)
+                </span>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-1 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                น้องโมจิ (สก็อตติชโฟลด์)
+              </span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-container mb-space-md">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-lg italic">
+              "ประทับใจระบบสะสมคะแนน Happy Club เอาแต้มไปแลกของเล่นกับขนมฟรีซดรายได้จริง แถมบริการให้คำปรึกษาโภชนาการฟรีช่วยให้เลือกอาหารให้หมาสูงวัยได้มั่นใจขึ้นมากค่ะ"
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md border-t border-surface-container">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of middle aged Thai lady with gentle smile petting a senior golden retriever dog in living room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9K75ZeeBUEADw81i6K_6lcrLti89jUQqhp_ZOaTFzi0kM0iQTbgR2cIhG1BkUPkznITVyaLsrmKMhoRRlYa9Jv4qy0mzKNoW9tsW54e8L99R0bmL4OkmEoTscbcqOd33ma5PFQN01PsTWkjB1KQTl1fBck5KaM7D7XfiKExJ9l4CHOqXWlXpSeddph3zDwqD-t3OkS7G6g83Et-ndGykVYVtbQLtclh9EDQKHa91UqOlM6qfWWtN9"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">คุณศิริพร อ.</p>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">verified</span> ผู้ซื้อจริง (Verified Buyer)
+                </span>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-1 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                น้องลัคกี้ (โกลเด้น 8 ขวบ)
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Member Club & Newsletter Subscription Callout -->
+<section class="w-full py-space-3xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter-lg">
+<div class="bg-surface-container-low rounded-3xl p-space-xl lg:p-space-2xl relative overflow-hidden">
+<!-- Floating Accent Circle -->
+<div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold mb-space-sm">
+<span class="material-symbols-outlined text-sm">redeem</span>
+<span>สิทธิพิเศษเฉพาะสมาชิกใหม่ Happy Club</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mb-space-sm">
+              สมัครสมาชิกวันนี้ รับคูปองส่วนลด 100 บาท ทันที!
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mb-space-lg leading-relaxed">
+              ร่วมเป็นครอบครัว Happy Pet เพื่อรับข้อเสนอสุดพิเศษรายสัปดาห์ สะสมคะแนนแลกอาหารและของพรีเมียม พร้อมสิทธิส่งฟรีไม่อั้นในวันเกิดน้องตัวโปรด
+            </p>
+<form class="flex flex-col sm:flex-row items-stretch gap-space-xs max-w-lg" onsubmit="event.preventDefault(); alert('ขอบคุณสำหรับการสมัครสมาชิก! รหัสคูปอง 100 บาท ถูกส่งไปยังอีเมลของท่านแล้ว');">
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant">mail</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-11 pr-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm" placeholder="กรอกอีเมลของคุณ เช่น name@domain.com" required="" type="email"/>
+</div>
+<button class="bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-label-lg text-label-lg px-space-lg py-3 rounded-xl font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-1.5 whitespace-nowrap" type="submit">
+<span>สมัครรับสิทธิ์</span>
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</form>
+<div class="flex items-center gap-space-md mt-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs text-secondary">check</span>ไม่มีค่าธรรมเนียมแรกเข้า</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs text-secondary">check</span>ยกเลิกจดหมายข่าวได้ตลอดเวลา</span>
+</div>
+</div>
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-full max-w-sm aspect-video sm:aspect-square rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Warm modern unboxing moment of happy pet delivery box filled with nutritious pet food packages, plush toys, and brand welcome card, happy dog peeking playfully." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoypI-Z-QRi7pAFNKH6RRutIn0CK4XWw0MK4estxmcGty5LksPp0tEkXV90_oLalifxy1LBo16XG3vI__1ss7ZRDijq5BPew7fthFKQ8yaDhL3ZyK_Ph2QHoK4h_g-TBHN-9Z3tB-iuPgXWpj0X_FH7MCpq_MUywQRI6-kEbxKl1YDBhYsFCmMy9BNR7rDgWS0WJWfD8sB-TiJWnZE_HOfxkjpI8htVgY1kHsNqlfxFxw687j54Y-3"/>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm p-3 rounded-xl flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface">Happy Club VIP Box</p>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">รับสิทธิ์ทุกยอดซื้อ 500 บาท = 10 แต้ม</p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl">loyalty</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple Countdown Timer Micro-interaction
+  (function initTimer() {
+    let totalSeconds = (8 * 3600) + (45 * 60) + 12;
+    const timerElement = document.getElementById('deal-timer');
+    if (!timerElement) return;
+
+    setInterval(() => {
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        const hours = Math.floor(totalSeconds / 3600).toString().padStart(2, '0');
+        const minutes = Math.floor((totalSeconds % 3600) / 60).toString().padStart(2, '0');
+        const seconds = (totalSeconds % 60).toString().padStart(2, '0');
+        timerElement.innerHTML = `
+          <span class="px-2 py-1 bg-surface-container rounded-lg">${hours}</span>:
+          <span class="px-2 py-1 bg-surface-container rounded-lg">${minutes}</span>:
+          <span class="px-2 py-1 bg-surface-container rounded-lg">${seconds}</span>
+        `;
+      }
+    }, 1000);
+  })();
+</script></main><footer class="w-full bg-surface-container-low pt-space-2xl pb-space-lg text-on-surface"><div class="max-w-container-max mx-auto px-gutter-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Happy Pet Shop Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UEYMV-01KwlYTZVn2n-G8wxuCInqQwOjPbpt-fzGyuKHgod2aPUgru3UoYzfU_B3b-G4dSj3WIf-fuKrh6_F_ajwY4xPgQroD4FZgUZEo2smYiUP9XCOPXzT0jLPr-R2Qwdu_l-AJhsXqlhz-dLM2nuo0NfNGGdss9bz8zWFV058EICIJ-L0TJNOduQ63sNaIYnLJtfQy1MsrZEwfSN4DqijQJKLhC0OKLbTXuxn5J8k6Y4c_Jr6-S2Go"/><span class="font-headline-sm text-headline-sm font-bold text-primary">Happy Pet Shop</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">ศูนย์รวมอาหารสัตว์เลี้ยงและเวชภัณฑ์เกรดพรีเมียม อาหารสดใหม่ ปลอดภัย 100% พร้อมคำแนะนำการดูแลโภชนาการสัตว์เลี้ยงจากสัตวแพทย์ผู้เชี่ยวชาญ เพื่อสุขภาพที่ดีและรอยยิ้มของเพื่อนรักตัวโปรด</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-lg">pets</span></span><span class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm"><span class="material-symbols-outlined text-lg">health_and_safety</span></span><span class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-sm"><span class="material-symbols-outlined text-lg">award_star</span></span></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">ลิงก์ด่วน (Quick Links)</h4><ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors flex items-center gap-1.5" data-path="home" href="#"><span class="material-symbols-outlined text-xs">chevron_right</span>หน้าแรก</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1.5" data-path="shop" href="#"><span class="material-symbols-outlined text-xs">chevron_right</span>สินค้าทั้งหมด</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1.5" data-path="cart" href="#"><span class="material-symbols-outlined text-xs">chevron_right</span>ตะกร้าสินค้า</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1.5" data-path="return-policy" href="#"><span class="material-symbols-outlined text-xs">chevron_right</span>นโยบายการคืนสินค้า</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1.5" data-path="promotions" href="#"><span class="material-symbols-outlined text-xs">chevron_right</span>สิทธิพิเศษสมาชิก VIP</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">ศูนย์บริการลูกค้า</h4><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-lg mt-0.5">call</span><div><p class="font-semibold text-on-surface">โทร 02-xxx-xxxx</p><p class="text-xs">สายด่วนบริการสั่งซื้อและคำปรึกษา</p></div></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">chat</span><div><p class="font-semibold text-on-surface">Line: @happypet</p><p class="text-xs">แชทสอบถามและสั่งซื้อสินค้า</p></div></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-on-surface-variant text-lg mt-0.5">schedule</span><div><p class="font-semibold text-on-surface">จันทร์ - อาทิตย์ 08:00 - 20:00 น.</p><p class="text-xs">เปิดให้บริการทุกวันไม่มีวันหยุด</p></div></div></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">วิธีการชำระเงิน</h4><p class="font-body-sm text-body-sm text-on-surface-variant">รองรับการชำระเงินหลากหลายช่องทาง ปลอดภัยและรวดเร็ว</p><div class="flex flex-wrap gap-2 pt-1"><div class="bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-sm">qr_code</span>PromptPay</div><div class="bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-sm">credit_card</span>Visa</div><div class="bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1.5"><span class="material-symbols-outlined text-primary-container text-sm">payments</span>Mastercard</div><div class="bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-sm">account_balance_wallet</span>TrueMoney</div></div><div class="pt-space-xs"><p class="font-label-sm text-label-sm text-on-surface-variant font-semibold mb-1.5">ติดตามข่าวสารและโปรโมชั่น</p><div class="flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors cursor-pointer shadow-sm"><span class="material-symbols-outlined text-base">public</span></span><span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors cursor-pointer shadow-sm"><span class="material-symbols-outlined text-base">chat_bubble</span></span><span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors cursor-pointer shadow-sm"><span class="material-symbols-outlined text-base">photo_camera</span></span><span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors cursor-pointer shadow-sm"><span class="material-symbols-outlined text-base">play_circle</span></span></div></div></div></div><div class="border-t border-outline-variant/30 pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-md text-label-md"><p>© 2025 Happy Pet Shop (ร้านขายอาหารสัตว์เลี้ยง). All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">นโยบายความเป็นส่วนตัว</a><a class="hover:text-on-surface transition-colors" data-path="terms-and-conditions" href="#">ข้อกำหนดการให้บริการ</a><a class="hover:text-on-surface transition-colors" data-path="return-policy" href="#">นโยบายการคืนสินค้า</a></div></div></div></footer></body></html>
